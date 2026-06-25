@@ -1,39 +1,67 @@
-# End-to-End-Heart-Disease-Prediction
-Machine learning web app for heart disease prediction with complete training and deployment pipeline.
+# End-to-End Heart Disease Prediction
 
-# 🩺 Cardiovascular Risk Screening Engine
+Machine learning web app for heart disease prediction with a complete training and deployment pipeline.
 
-An end-to-end Machine Learning pipeline designed for clinical decision support. This system uses patient clinical metrics to predict coronary artery disease risk, prioritizing high sensitivity (Recall) to ensure critical cases are identified.
+## Cardiovascular Risk Screening Engine
 
-## 🚀 Pipeline Overview
-This project implements a robust machine learning architecture that automates the transition from raw data ingestion to an interactive, explainable diagnostic web dashboard.
+An end-to-end machine learning pipeline designed for clinical decision support. This system uses patient clinical metrics to predict coronary artery disease risk, prioritizing high sensitivity (Recall) to identify critical cases early.
+
+## Pipeline Overview
+
+This project implements a robust machine learning architecture that automates the transition from raw data ingestion to an interactive, explainable diagnostic dashboard.
 
 ### Key Features
-* **Adaptive Champion Selection**: The pipeline evaluates Logistic Regression, Random Forest, and XGBoost architectures, automatically selecting the model with the best Recall score.
-* **Production-Grade Preprocessing**: Uses `sklearn.ColumnTransformer` to handle scaling and categorical encoding, ensuring that inference data is transformed identically to training data, eliminating column drift.
-* **Explainable AI (XAI)**: Integrates **SHAP** to provide local, patient-specific explanations, helping clinicians understand *why* the model assigned a specific risk score.
 
-## 🛠 Project Structure
+* **Adaptive Model Selection**
+  Evaluates Logistic Regression, Random Forest, and XGBoost, automatically selecting the best-performing model based on Recall.
+
+* **Production-Grade Preprocessing**
+  Uses `sklearn.ColumnTransformer` for feature scaling and categorical encoding, ensuring consistent transformations during training and inference.
+
+* **Explainable AI (XAI)**
+  Integrates SHAP for local prediction explanations, improving interpretability of model decisions.
+
+* **Interactive Dashboard**
+  Built with Streamlit for real-time predictions and visualization.
+
+## Tech Stack
+
+* Python
+* Scikit-learn
+* XGBoost
+* Pandas, NumPy
+* Matplotlib, SHAP
+* Streamlit
+
+## Project Structure
+
 ```text
-├── models/             # Serialized .pkl artifacts and JSON feature metadata
-├── reports/            # Automated performance reports (Confusion Matrix, SHAP plots)
-├── app.py              # Streamlit web interface
-├── train.py            # Training, cross-validation, and artifact serialization
-└── README.md           # This project documentation
+End-to-End-Heart-Disease-Prediction/
+├── models/
+├── reports/
+├── app.py
+├── train.py
+├── requirements.txt
+└── README.md
 ```
-⚙️ Quick Start
-1. Requirements
-Install the necessary dependencies:
 
-Bash
+## Setup
+
+```bash
 pip install -r requirements.txt
-2. Training
-Generate the production artifacts (models, metadata, and reports):
-
-Bash
 python train.py
-3. Launching the App
-Start the interactive dashboard:
-
-Bash
 streamlit run app.py
+```
+
+## Evaluation Metrics
+
+Primary metric:
+
+* Recall (Sensitivity)
+
+Additional metrics:
+
+* Accuracy
+* Precision
+* F1 Score
+* ROC-AUC
