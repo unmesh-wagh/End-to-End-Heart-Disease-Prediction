@@ -20,7 +20,7 @@ This project implements a robust machine learning architecture that automates th
 ├── app.py              # Streamlit web interface
 ├── train.py            # Training, cross-validation, and artifact serialization
 └── README.md           # This project documentation
-
+```
 ⚙️ Quick Start
 1. Requirements
 Install the necessary dependencies:
