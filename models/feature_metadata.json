@@ -1,0 +1,109 @@
+{
+  "age": {
+    "label": "Age (years)",
+    "min": 29,
+    "max": 77,
+    "inverse": false
+  },
+  "trestbps": {
+    "label": "Resting Blood Pressure (mmHg)",
+    "min": 94,
+    "max": 200,
+    "inverse": false
+  },
+  "chol": {
+    "label": "Serum Cholesterol (mg/dl)",
+    "min": 126,
+    "max": 564,
+    "inverse": false
+  },
+  "fbs": {
+    "label": "Fasting Blood Sugar >120 mg/dl",
+    "min": 0,
+    "max": 1,
+    "inverse": false
+  },
+  "thalach": {
+    "label": "Max Heart Rate Achieved (bpm)",
+    "min": 71,
+    "max": 202,
+    "inverse": true,
+    "note": "Higher thalach = healthier response = LOWER risk."
+  },
+  "exang": {
+    "label": "Exercise-Induced Angina",
+    "min": 0,
+    "max": 1,
+    "inverse": false
+  },
+  "oldpeak": {
+    "label": "ST Depression (exercise vs rest)",
+    "min": 0.0,
+    "max": 6.2,
+    "inverse": false
+  },
+  "slope": {
+    "label": "Slope of Peak Exercise ST",
+    "min": 1,
+    "max": 3,
+    "inverse": false
+  },
+  "cp": {
+    "label": "Chest Pain Type",
+    "categories": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "category_labels": {
+      "1": "Typical Angina",
+      "2": "Atypical Angina",
+      "3": "Non-Anginal",
+      "4": "Asymptomatic"
+    }
+  },
+  "restecg": {
+    "label": "Resting ECG Result",
+    "categories": [
+      0,
+      1,
+      2
+    ],
+    "category_labels": {
+      "0": "Normal",
+      "1": "ST-T Abnormality",
+      "2": "LV Hypertrophy"
+    }
+  },
+  "thal": {
+    "label": "Thalassemia",
+    "categories": [
+      3,
+      6,
+      7
+    ],
+    "category_labels": {
+      "3": "Normal",
+      "6": "Fixed Defect",
+      "7": "Reversible Defect"
+    }
+  },
+  "sex": {
+    "label": "Sex",
+    "categories": [
+      0,
+      1
+    ],
+    "category_labels": {
+      "0": "Female",
+      "1": "Male"
+    }
+  },
+  "ca": {
+    "label": "Major Vessels Colored by Fluoroscopy",
+    "min": 0,
+    "max": 3,
+    "inverse": false
+  }
+}
